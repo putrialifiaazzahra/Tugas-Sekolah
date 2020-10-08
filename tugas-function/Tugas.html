@@ -16,7 +16,7 @@
     <div>
         <div class="tampilan">
             <header>
-                <h2 style="font-family: goodmorning; color: white; font-size: 40px;">Sewa Kamera</h2>
+                <h2 style="font-family: goodmorning; color: white; font-size: 40px;">Sewain Sepeda Aja</h2>
             </header>
         </div>
 
@@ -39,13 +39,13 @@
 
     <div class="clr">
       <br>
-      <h4 style="margin-left: 20px;">Syarat & Ketentuan Sewa Kamera</h4>
+      <h4 style="margin-left: 20px;">Syarat & Ketentuan Sewa</h4>
       <ol>
         <ul>
           <li>Sebelum menyewa, isi Form sesuai dengan data asli customer</li>
-          <li>Jaminan dengan foto tanda pengenal(KTP/KK/Kartu Pelajar,dll)</li>
-          <li>Apabila kamera dikembalikan, lebih dari hari sewa maka akan dikenakan biaya tambahan</li>
-          <li>Bertanggung jawab apabila terjadi kerusakan, pada saat kamera disewa</li><br>
+          <li>Jaminan dengan tanda pengenal(KTP/KK/Kartu Pelajar,dll)</li>
+          <li>Apabila sepeda dikembalikan, lebih dari jam sewa maka akan dikenakan biaya tambahan</li>
+          <li>Bertanggung jawab apabila terjadi kerusakan, pada saat produk disewa</li><br>
         </ul>
       </ol>
     </div>
@@ -54,31 +54,30 @@
       <div class="row row-cols-1 row-cols-md-3">
         <div class="col mb-4">
           <div class="card h-100">
-            <img src="nikon_d3100.jpg" class="card-img-top" width="25px" alt="..." height="230">
+            <img src="sepeda1.jpg" class="card-img-top" width="25px" alt="..." height="220">
             <div class="card-body">
-              <h5 class="card-title">DSLR NIKON D3100</h5>
-              <p class="card-text">Efektifitas piksel : 14.2 MP
-                Fitur HD Recording
-                Dengan layar berukuran 3.0 Inch</p>
+              <h5 class="card-title">Kode A2440</h5>
+              <p class="card-text">Sepeda minim untuk perempuan
+                Dilengkapi dengan keranjang dan kursi bonceng dibelakang
+              </p>
             </div>
           </div>
         </div>
         <div class="col mb-4">
           <div class="card h-100">
-            <img src="CANON-EOS-70D.jpg" class="card-img-top" width="25px" alt="..." height="230">
+            <img src="sepeda7.jpg" class="card-img-top" width="20px" alt="..." height="250">
             <div class="card-body">
-              <h5 class="card-title">DSLR CANON EOS 70D</h5>
-              <p class="card-text">Efektifitas piksel : 20.2 MP, CMOS
-                Prosesor : DIGIC 5+
-                ISO hingga 12800
-                Dilengkapi dengan layar sentuh berukuran 3.0 Inch
-                Memiliki konetifitas Wi-Fi</p>
+              <h5 class="card-title">Kode B450</h5>
+              <p class="card-text">Sepeda mini
+                untuk anak kecil umur 4-6thn
+                Dilengkapi roda 2 dibelakang
+              </p>
             </div>
           </div>
         </div>
         <div class="col mb-4">
           <div class="card h-100">
-            <img src="camsony2.jpg" class="card-img-top" width="15px" alt="..." height="230">
+            <img src="sepeda2.jpg" class="card-img-top" width="15px" alt="..." height="220">
             <div class="card-body">
               <h5 class="card-title">MIRROLESS SONY A6000L</h5>
               <p class="card-text">Layar : 3.0 Inch 921k-Dot Xtra Fine Tilting LCD
@@ -91,20 +90,19 @@
         </div>
         <div class="col mb-4">
           <div class="card h-100">
-            <img src="B-Pro5.jpg" class="card-img-top" width="15px" alt="..." height="250">
+            <img src="sepeda3.jpg" class="card-img-top" width="15px" alt="..." height="200">
             <div class="card-body">
-              <h5 class="card-title">BRICA B-PRO 5 Alpha Edition 4k</h5>
-              <p class="card-text">Video Resoluiton : Ultra HD 4K
-                Photo Resoluiton : 16 Megapixels
-                File Format : Video : MP4 H.264
-                LCD Display: 2.0 Inch TFT LCD
-                Lens : Fixed Focus Wide Angle LENS (170 Derajat)</p>
+              <h5 class="card-title">Kode BX280</h5>
+              <p class="card-text">Sepeda BMX
+                Ukuran sedang untuk umur 7-10thn
+                Dengan rem tangan.
+              </p>
             </div>
           </div>
         </div>
         <div class="col mb-4">
           <div class="card h-100">
-            <img src="fujifilm.jpg" class="card-img-top" width="20px" alt="..." height="250">
+            <img src="sepeda4.jpg" class="card-img-top" width="20px" alt="..." height="200">
             <div class="card-body">
               <h5 class="card-title">Fujifilm X-A7 kit XC</h5>
               <p class="card-text">Movie Movie File Format: MPEG-4 Movie Video
@@ -118,7 +116,8 @@
       </div>
     </div>
 
-      <div class="tabel">
+    <div class="body">
+      <div class="form">
         <div class="card-header text-white text-center mt-4" style="background-color: brown;"><b>Formulir Data</b></div><br>
 
         <label for="namacs">Nama Customer</label>
@@ -152,26 +151,29 @@
                 <option>Rek.Mandiri</option>
             </select>
 
-        <button class="btn btn-primary mt-4" type="button" onclick="add()" id="button1">Simpan</button>
-        <button class="btn btn-success mt-4" type="button" onclick="simpanEdit()" id="button2">Update</button>
+        <button class="btn btn-primary mt-3 mb-4" type="button" onclick="add()" id="button1">Simpan</button>
+        <button class="btn btn-success mt-3 mb-4" type="button" onclick="simpanEdit()" id="button2">Update</button>
+    </div>
 
-        <table class="table table-bordered mt-4">
-            <thead>
-              <tr style="background-color: brown; color: white;">
-                <th scope="col">No</th>
-                <th scope="col">Nama Customer</th>
-                <th scope="col">Alamat Customer</th>
-                <th scope="col">No Telepon</th>
-                <th scope="col">Jenis Sewa</th>
-                <th scope="col">Tanggal Sewa</th>
-                <th scope="col">Metode Pembayaran</th>
-                <th scope="col">Modify</th>
-              </tr>
-            </thead>
-            <tbody id="tampildata">
-              
-            </tbody>
-        </table>
+    <div class="tabel">
+      <table class="table table-bordered mt-4">
+        <thead>
+          <tr style="background-color: brown; color: white;">
+            <th scope="col">No</th>
+            <th scope="col">Nama Customer</th>
+            <th scope="col">Alamat Customer</th>
+            <th scope="col">No Telepon</th>
+            <th scope="col">Jenis Sewa</th>
+            <th scope="col">Tanggal Sewa</th>
+            <th scope="col">Metode Pembayaran</th>
+            <th scope="col">Modify</th>
+          </tr>
+        </thead>
+        <tbody id="tampildata">
+          
+        </tbody>
+    </table>
+    </div>
     </div>
 
     <script>
@@ -193,7 +195,7 @@
         function showData() {
             tampil.innerHTML = ""
             
-            for(i = 0;i < kodesewa.length; i++) {
+            for(i = 0;i < namacs.length; i++) {
               var nodata = i+1;
 
                 tampil.innerHTML += "<tr>" +

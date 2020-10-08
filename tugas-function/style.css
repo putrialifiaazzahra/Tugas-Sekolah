@@ -12,12 +12,24 @@
     src: url('Good\ Morning.ttf');
 }
 
-.tabel{
+.form{
+    float: left;
+    width: 50%;
     height: 100%;
     font-size: 20px;
-    color: darkslategray;
 }
 
 .clr{  
     background-color: rgb(235, 235, 235);
+}
+
+.tabel{
+    width: 100%;
+    font-size: 20px;
+    color: darkslategray;
+}
+
+.body{
+    height: 100%;
+    width: 100%;
 }

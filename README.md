@@ -1,2 +1,2 @@
-# tugas-sekolah
-pengumpulan tugas
+# Tugas-Sekolah
+Pengumpulan Tugas

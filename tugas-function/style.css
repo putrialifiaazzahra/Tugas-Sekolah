@@ -1,0 +1,23 @@
+.container{
+    width: 1000px;
+}
+
+.tampilan{
+    background-color: brown;
+    padding: 15px;
+}
+
+@font-face{
+    font-family: goodmorning;
+    src: url('Good\ Morning.ttf');
+}
+
+.tabel{
+    height: 100%;
+    font-size: 20px;
+    color: darkslategray;
+}
+
+.clr{  
+    background-color: rgb(235, 235, 235);
+}

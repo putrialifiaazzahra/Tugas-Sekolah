@@ -121,14 +121,14 @@
       <div class="tabel">
         <div class="card-header text-white text-center mt-4" style="background-color: brown;"><b>Formulir Data</b></div><br>
 
-        <label for="kodesewa">Kode Sewa</label>
-        <input type="text" class="form-control" id="kode">
-
         <label for="namacs">Nama Customer</label>
         <input type="text" class="form-control" id="nama">
 
         <label for="alamatcs">Alamat Customer</label>
         <input type="text" class="form-control" id="alamat">
+
+        <label for="teleponcs">No Telepon</label>
+        <input type="text" class="form-control" id="telepon">
 
         <label for="jenissewa">Jenis Sewa</label>
             <select class="form-control" id="jenis">
@@ -159,9 +159,9 @@
             <thead>
               <tr style="background-color: brown; color: white;">
                 <th scope="col">No</th>
-                <th scope="col">Kode Sewa</th>
                 <th scope="col">Nama Customer</th>
                 <th scope="col">Alamat Customer</th>
+                <th scope="col">No Telepon</th>
                 <th scope="col">Jenis Sewa</th>
                 <th scope="col">Tanggal Sewa</th>
                 <th scope="col">Metode Pembayaran</th>
@@ -175,9 +175,9 @@
     </div>
 
     <script>
-        var kodesewa= []
         var namacs = []
         var alamatcs = []
+        var teleponcs= []
         var jenissewa = []
         var tanggalsewa = []
         var pembayaran = []
@@ -198,9 +198,9 @@
 
                 tampil.innerHTML += "<tr>" +
                     "<th>" + nodata + "</th>" +
-                    "<td>" + kodesewa[i] + "</td>" +
                     "<td>" + namacs[i] + "</td>" +
                     "<td>" + alamatcs[i] + "</td>" +
+                    "<td>" + teleponcs[i] + "</td>" +
                     "<td>" + jenissewa[i] + "</td>" +
                     "<td>" + tanggalsewa[i] + "</td>" +
                     "<td>" + pembayaran[i] + "</td>" +
@@ -215,33 +215,33 @@
         showData()
 
         function add() {
-            var kodebaru = document.getElementById('kode').value
             var namabaru = document.getElementById('nama').value
             var alamatbaru = document.getElementById('alamat').value
+            var teleponbaru = document.getElementById('telepon').value
             var jenisbaru = document.getElementById('jenis').value
             var tanggalbaru = document.getElementById('tanggal').value
             var bayarbaru= document.getElementById('bayar').value
 
-            kodesewa.push(kodebaru)
             namacs.push(namabaru)
             alamatcs.push(alamatbaru)
+            teleponcs.push(teleponbaru)
             jenissewa.push(jenisbaru)
             tanggalsewa.push(tanggalbaru)
             pembayaran.push(bayarbaru)
 
             showData()
-            document.getElementById('kode').value = ""
             document.getElementById('nama').value = ""
             document.getElementById('alamat').value = ""
+            document.getElementById('telepon').value = ""
             document.getElementById('jenis').value = ""
             document.getElementById('tanggal').value = ""
             document.getElementById('bayar').value = ""
         }
 
         function hapus(id) {
-            kodesewa.splice(id,1)
             namacs.splice(id,1)
             alamatcs.splice(id,1)
+            teleponcs.splice(id,1)
             jenissewa.splice(id,1)
             tanggalsewa.splice(id,1)
             pembayaran.splice(id,1)
@@ -252,9 +252,9 @@
 
         var index = []
         function edit(i) {
-            document.getElementById('kode').value = kodesewa[i]
             document.getElementById('nama').value = namacs[i]
             document.getElementById('alamat').value = alamatcs[i]
+            document.getElementById('telepon').value = teleponcs[i]
             document.getElementById('jenis').value = jenissewa[i]
             document.getElementById('tanggal').value = tanggalsewa[i]
             document.getElementById('bayar').value = pembayaran[i]
@@ -265,24 +265,24 @@
         }
 
         function simpanEdit() {
-            var kodebaru = document.getElementById('kode').value
             var namabaru = document.getElementById('nama').value
             var alamatbaru = document.getElementById('alamat').value
+            var teleponbaru = document.getElementById('telepon').value
             var jenisbaru = document.getElementById('jenis').value
             var tanggalbaru = document.getElementById('tanggal').value
             var bayarbaru = document.getElementById('bayar').value
 
-            kodesewa[index] = kodebaru
             namacs[index] = namabaru
             alamatcs[index] = alamatbaru
+            teleponcs[index] = teleponbaru
             jenissewa[index] = jenisbaru
             tanggalsewa[index] = tanggalbaru
             pembayaran[index] = bayarbaru
             showData()
             index.pop()
-            document.getElementById('kode').value = ""
             document.getElementById('nama').value = ""
             document.getElementById('alamat').value = ""
+            document.getElementById('telepon').value = ""
             document.getElementById('jenis').value = ""
             document.getElementById('tanggal').value = ""
             document.getElementById('bayar').value = ""

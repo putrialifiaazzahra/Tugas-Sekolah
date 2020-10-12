@@ -13,9 +13,7 @@
 }
 
 .form{
-    float: left;
-    width: 50%;
-    height: 100%;
+    margin-left: 180px;
     font-size: 20px;
 }
 
